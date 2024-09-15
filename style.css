@@ -1,107 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
 
 body{
-background-color: rgb(238, 225, 182);
-font-family: helvetica, Arial, Helvetica, sans-serif;
-margin: 0;
-font-size: 1.9vw;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
-p {
-    font-size: 0.8em;
-}
-
-#logo { 
-    margin: 0px;
-    padding: 8px;
-    color: white;
-    font-family: "Fredoka One", sans-serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-}
-
-h1{
-    margin: 0;
-}
-ul{
-    margin: 0;
-}
-body> header{
-    background-color:rgb(230, 171, 61);
+header{
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 7%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
     display: flex;
-    height: 12vh;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-around;
+    z-index: 100;
 }
 
-#nav-ul {
+.logo{
+    font-size: 3rem;
+    color:rgb(80, 126, 110);
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+nav a{
+    font-size: 1.8rem;
+    color: black;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    color: rgb(80, 126, 110);
+    border-bottom: 3px solid rgb(80, 126, 110); 
+}
+
+nav a.active {
+    color: rgb(80, 126, 110); 
+}
+
+      
+
+
+.home{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color:rgb(255, 255, 255) ;
 }
 
-#nav-ul > li {
-    padding: 8px;
-    margin: 16px;
+.home .home-content h1{
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.3;
 }
 
-body >header >nav > ul {
-    list-style: none;
-    text-decoration: none;
+span{
+    color: rgb(80, 126, 110);
+    }
+
+.home-content h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
 }
 
-.navbutton {
-    color: white;
-    text-decoration: none;
-    padding: 12px;
-    border: 1px solid white;
-    border-radius: 12%;
-}
-
-.content p {
-    text-align: justify; /* Justifies the paragraph text within the article */
-    line-height: 1.6;    /* Optional: Adjusts line height for better readability */
-  }
-  
-
-form {
- text-align: center;
-}
-
-h2 {
-    text-align: center;
-   }
-   
-body > main article {
-    width: 80%;
-    margin: auto;
-}
-
-#main-content {
-    display: flex;
-    justify-content: space-around;
-}
-
-#main-content > div {
-    width: 70%;
-}
-
-body> footer{
-    background-color: rgb(230, 171, 61);
-    display: flex;
+.home-img {
+    border-radius: 50%;
 
 }
 
-#footer-ul{
-    display: flex;
-    list-style: none;
+.home-img img{
+    position: relative;
+    width: 32vw;
+    border-radius: 25%;
+    box-shadow: 0 0 25px solid;
+    cursor: pointer;
+    transition: 0.2s linear;
+
 }
 
-#footer-ul > div > li{
-    margin-left: 12px;
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 400;
 }
 
-#footer-ul > div > li > a {
-    text-decoration: none;
-    color: white;
+.social-icons {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
-img {
-    border-radius: 100%;
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 1.5rem;
+    color:rgb(80, 126, 110);
+    transition: 0.3s ease;
 }
+
+.social-icons a:hover{
+    color: black;
+    transform: scale(1.2);
+    box-shadow: 0 0 25px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color:rgb(80, 126, 110) ;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color:rgb(255, 255, 255) ;
+    letter-spacing: 0.19rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    background-color: black;
+    box-shadow: 0 0 25px black;
+}
+
+
